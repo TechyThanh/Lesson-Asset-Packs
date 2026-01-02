@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="50"
+   height="50"
+   viewBox="0 0 50 50.000002"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   sodipodi:docname="rock.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     inkscape:zoom="11.246128"
+     inkscape:cx="3.0677225"
+     inkscape:cy="25.475435"
+     inkscape:window-width="1920"
+     inkscape:window-height="1009"
+     inkscape:window-x="1912"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       style="fill:#7a776e;fill-opacity:1;stroke:#636363;stroke-width:0.999996;stroke-linecap:round;stroke-linejoin:miter;stroke-opacity:1;paint-order:markers stroke fill"
+       d="m 0.99669302,49.272019 8.52140248,-15.736308 8.9517765,0.773916 4.389813,-7.395204 20.313646,4.729491 5.939159,17.628105 z"
+       id="path1"
+       sodipodi:nodetypes="ccccccc" />
+    <path
+       style="fill:#9e9985;fill-opacity:1;stroke:#636363;stroke-linecap:butt;stroke-linejoin:bevel;stroke-opacity:1;paint-order:markers stroke fill"
+       d="M 18.642608,33.984249 29.42577,40.240369 43.384148,31.752166 22.823834,26.470618 Z"
+       id="path2"
+       sodipodi:nodetypes="ccccc" />
+    <path
+       style="fill:#6b685d;fill-opacity:1;stroke:#636363;stroke-width:1.00157;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+       d="M 43.293005,32.017337 29.298973,40.32499 27.120062,49.232196 49.051197,49.119467 Z"
+       id="path3"
+       sodipodi:nodetypes="ccccc" />
+  </g>
+</svg>
