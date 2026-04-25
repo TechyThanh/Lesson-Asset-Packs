@@ -1,0 +1,17 @@
+You don't have to use the same files as I am for the tutorial but if you want to,
+copy/paste the URLs into your web browser.
+
+SFX ---------------------------
+Monster Snarl 3 - https://opengameart.org/content/monster-snarls
+
+Slime 1, 4, and 6 - https://opengameart.org/content/80-cc0-creture-sfx-2
+
+Button Clicking Sounds - https://opengameart.org/content/interface-sounds
+
+
+BGM ----------------------------
+Game Over Jingle - https://opengameart.org/content/spooky-castle-arcade-8-bit-loops
+
+Tea Party - https://opengameart.org/content/post-adventure-tea-party
+
+Happy Walk - https://opengameart.org/content/happy-walk

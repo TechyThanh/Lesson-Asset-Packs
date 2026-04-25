@@ -1,0 +1,133 @@
+[gd_scene format=3 uid="uid://blb5n7bkmh6c"]
+
+[ext_resource type="Texture2D" uid="uid://dajw0qbe7hmmc" path="res://soundToggle.svg" id="1_lti8b"]
+[ext_resource type="Script" uid="uid://c8rweatee1jxt" path="res://menu.gd" id="1_ouk20"]
+[ext_resource type="Script" uid="uid://bia67giijdql" path="res://quit_button.gd" id="3_mae5d"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ouk20"]
+atlas = ExtResource("1_lti8b")
+region = Rect2(0, 0, 50, 50)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mae5d"]
+atlas = ExtResource("1_lti8b")
+region = Rect2(50, 0, 50, 50)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4hy44"]
+bg_color = Color(0.6158435, 0, 0.098292135, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.35065603, 0, 0.03770414, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ytr4m"]
+bg_color = Color(0.9999481, 0.47259516, 0.45170325, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.35065603, 0, 0.03770414, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_l48gv"]
+bg_color = Color(0.99189395, 0.0010378434, 0.18439606, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.35065603, 0, 0.03770414, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[node name="menu" type="CanvasLayer" unique_id=919298746]
+script = ExtResource("1_ouk20")
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=1241623371]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 50
+theme_override_constants/margin_top = 50
+theme_override_constants/margin_right = 50
+theme_override_constants/margin_bottom = 50
+
+[node name="ColorRect" type="ColorRect" parent="MarginContainer" unique_id=1491403068]
+layout_mode = 2
+color = Color(0.40392157, 0.30588236, 0.24705882, 0.87058824)
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer" unique_id=725511493]
+layout_mode = 2
+theme_override_constants/margin_left = 50
+theme_override_constants/margin_top = 50
+theme_override_constants/margin_right = 50
+theme_override_constants/margin_bottom = 50
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/MarginContainer" unique_id=303581817]
+layout_mode = 2
+theme_override_constants/separation = 20
+alignment = 1
+
+[node name="GridContainer" type="GridContainer" parent="MarginContainer/MarginContainer/VBoxContainer" unique_id=1611341626]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_constants/h_separation = 20
+theme_override_constants/v_separation = 20
+columns = 3
+
+[node name="Label" type="Label" parent="MarginContainer/MarginContainer/VBoxContainer/GridContainer" unique_id=575877258]
+layout_mode = 2
+text = "BGM Audio"
+
+[node name="sliderBGM" type="HSlider" parent="MarginContainer/MarginContainer/VBoxContainer/GridContainer" unique_id=1786210348]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+size_flags_vertical = 4
+min_value = -60.0
+max_value = -30.0
+step = 10.0
+value = -30.0
+
+[node name="muteBGM" type="TextureButton" parent="MarginContainer/MarginContainer/VBoxContainer/GridContainer" unique_id=342475977]
+layout_mode = 2
+texture_normal = SubResource("AtlasTexture_ouk20")
+texture_pressed = SubResource("AtlasTexture_mae5d")
+
+[node name="Label2" type="Label" parent="MarginContainer/MarginContainer/VBoxContainer/GridContainer" unique_id=217790756]
+layout_mode = 2
+text = "SFX Audio"
+
+[node name="sliderSFX" type="HSlider" parent="MarginContainer/MarginContainer/VBoxContainer/GridContainer" unique_id=135913099]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+size_flags_vertical = 4
+min_value = -60.0
+max_value = -10.0
+value = -10.0
+
+[node name="muteSFX" type="TextureButton" parent="MarginContainer/MarginContainer/VBoxContainer/GridContainer" unique_id=1081388210]
+layout_mode = 2
+texture_normal = SubResource("AtlasTexture_ouk20")
+texture_pressed = SubResource("AtlasTexture_mae5d")
+
+[node name="quitButton" type="Button" parent="MarginContainer/MarginContainer/VBoxContainer" unique_id=357001235]
+custom_minimum_size = Vector2(100, 50)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_styles/normal = SubResource("StyleBoxFlat_4hy44")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_ytr4m")
+theme_override_styles/hover = SubResource("StyleBoxFlat_l48gv")
+text = "QUIT"
+script = ExtResource("3_mae5d")
+
+[connection signal="pressed" from="MarginContainer/MarginContainer/VBoxContainer/quitButton" to="MarginContainer/MarginContainer/VBoxContainer/quitButton" method="_on_pressed"]
